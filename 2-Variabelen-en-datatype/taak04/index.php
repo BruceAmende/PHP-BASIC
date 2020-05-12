@@ -2,7 +2,7 @@
 
 
 $test = true;
-$test =;
+$test ="";
 
 echo $test;
 
