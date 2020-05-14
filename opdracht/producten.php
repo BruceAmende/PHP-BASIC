@@ -2,10 +2,14 @@
 <html lang="en">
   <head>
     <!-- Required meta tags -->
+    <?php include 'includes/functions.php';?>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Title</title>
+    <title>Producten</title>
   </head>
+  <div class="menu">
+        <?php include 'includes/menu.php';?>
+    </div>
     <form action="producten.php" method="get"><!-- dit laten staan! -->
 
     <p>Hieronder een lijst met producten die je bij ons kunt bestellen en de prijs per stuk:</p>
@@ -17,13 +21,58 @@
             </tr>
             <tr>
                 <td>0</td>
-                <td>appels</td>
-                <td>0,25</td>
+                <td><?php echo $producten[0];?></td>
+                <td><?php echo $prijzen[0];?></td>
             </tr>
             <tr>
                 <td>1</td>
-                <td>peren</td>
-                <td>0,30</td>
+                <td><?php echo $producten[1];?></td>
+                <td><?php echo $prijzen[1];?></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><?php echo $producten[2];?></td>
+                <td><?php echo $prijzen[2];?></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><?php echo $producten[3];?></td>
+                <td><?php echo $prijzen[3];?></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><?php echo $producten[4];?></td>
+                <td><?php echo $prijzen[4];?></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td><?php echo $producten[5];?></td>
+                <td><?php echo $prijzen[5];?></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td><?php echo $producten[6];?></td>
+                <td><?php echo $prijzen[6];?></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td><?php echo $producten[7];?></td>
+                <td><?php echo $prijzen[7];?></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td><?php echo $producten[8];?></td>
+                <td><?php echo $prijzen[8];?></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td><?php echo $producten[9];?></td>
+                <td><?php echo $prijzen[9];?></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td><?php echo $producten[10];?></td>
+                <td><?php echo $prijzen[10];?></td>
             </tr>
         </table>
 
@@ -33,9 +82,14 @@
     <p>Vul je leeftijd in voor korting</p>
     <p><label>leeftijd: </label><input type="text" name="leeftijd"></p><!-- dit laten staan! -->
     <p><button type="submit" name="submit">Bereken totaal</button></p><!-- dit laten staan! -->
-    <p>voor <?php getAmount(); ?> x het product: <?php getProductNr(); ?> betaal je:</p>
-    <p>je bent <?php getAge(); ?> je korting is: </p>
+    <p>voor <?php getAmount(); ?> x het product: <?php getProductNr(); ?> betaal je: <?php getTotal(); ?></p>
+    <p>je bent <?php getAge(); ?> je korting is: <?php getDisc(); ?> </p>
 
     </form><!-- dit laten staan! -->
+    <footer>
+    <div class="footer">
+         <?php include 'includes/footer.php';?>
+    </div>
+    </footer>
   </body>
 </html>
