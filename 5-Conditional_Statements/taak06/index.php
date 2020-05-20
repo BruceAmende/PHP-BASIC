@@ -28,6 +28,6 @@ if($test1 < 10  ! $test2 > 10){
     echo "Een waarde is wel groter dan 10";
 }
 
-
+echo "hallo";
 
 ?>
