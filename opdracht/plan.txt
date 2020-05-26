@@ -1,0 +1,5 @@
+Eindopdracht PHP-Basic
+1. Ik maak de benodigde PHP bestanden aan.
+2. Ik zorg ervoor dat ze ge include zijn.
+3. Ik zorg ervoor dat de code geen foutmelding geeft.
+4. Ik maak de benodigde functies aan.
